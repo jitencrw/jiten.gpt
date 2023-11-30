@@ -1,0 +1,18 @@
+<%- include("partials/header.ejs") %>
+ 
+<img src="/images/logo.jpg" alt="jiten.gpt logo" width="200" height="200">
+
+
+ <form action="/result" method="post">
+  <input name="name" type="text" <% if(locals.input) { %> placeholder="<%= input %>" <% } else { %> placeholder = "How can I help you ?" <% } %>/>
+  <input type="submit" id="button" value="ASK">
+ </form>
+
+
+ <% if(locals.result) { %> 
+  <div id="div1"><p><%= result %></p> </div>
+  <% } %>
+ 
+  
+
+ <%- include("partials/footer.ejs") %>
