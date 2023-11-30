@@ -2,7 +2,7 @@ import OpenAI from "openai";
 import express from "express";
 import bodyParser from "body-parser";
 
-const openai = new OpenAI({apiKey: "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"});
+const openai = new OpenAI({apiKey: "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"});
 const port = 3000;
 const app = express();
 var input = "";
